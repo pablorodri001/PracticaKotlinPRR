@@ -18,14 +18,14 @@
             android:layout_weight="2"
             android:text="Nombre"
             android:textSize="18sp"
-            android:textColor="@android:color/black" android:layout_height="match_parent"/>
+            android:textColor="@android:color/black" android:layout_height="match_parent" android:layout_width="match_parent"/>
 
         <TextView
             android:id="@+id/tvPosicion"
             android:layout_weight="1"
             android:text="Posicion"
             android:textSize="18sp"
-            android:textColor="@android:color/black" android:layout_height="match_parent"/>
+            android:textColor="@android:color/black" android:layout_height="match_parent" android:layout_width="match_parent"/>
 
     </LinearLayout>
 
@@ -39,14 +39,14 @@
             android:layout_weight="2"
             android:text="Precio"
             android:textSize="18sp"
-            android:textColor="@android:color/black" android:layout_height="match_parent"/>
+            android:textColor="@android:color/black" android:layout_height="match_parent" android:layout_width="match_parent"/>
 
         <TextView
             android:id="@+id/tvPuntos"
             android:layout_weight="1"
             android:text="Puntos"
             android:textSize="18sp"
-            android:textColor="@android:color/black" android:layout_height="match_parent"/>
+            android:textColor="@android:color/black" android:layout_height="match_parent" android:layout_width="match_parent"/>
 
     </LinearLayout>
 
