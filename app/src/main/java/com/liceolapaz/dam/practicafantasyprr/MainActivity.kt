@@ -1,6 +1,8 @@
 package com.liceolapaz.dam.practicafantasyprr
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -24,6 +26,17 @@ class MainActivity : ComponentActivity() {
         password = findViewById(R.id.password)
         loginButton = findViewById(R.id.loginButton)
 
+        loginButton.setOnClickListener() {
+            if (user.text.toString().equals("admin") && password.text.toString().equals("liceo")) {
+                val intent = Intent(this@MainActivity, menuBD::class.java)
+                startActivity(intent)
+            } else {
+                contador++
+                incorrecto.setVisibility(View.VISIBLE);
+                if (contador == 3)
+                { finishAffinity()}
+            }
+        }
 
 
     }

@@ -50,7 +50,7 @@ class AnadirJugador : AppCompatActivity() {
         posiciones.adapter = adaptador
 
         cancelarBtn.setOnClickListener() {
-            val intent = Intent(this@AnadirJugador, menuBD::class.java)
+            val intent = Intent(this@AnadirJugador, `menuBD`::class.java)
             startActivity(intent)
         }
     }
@@ -68,14 +68,14 @@ class AnadirJugador : AppCompatActivity() {
                     val puntos2 = puntos.text.toString().toInt()
 
                     jugadoresDB.execSQL("INSERT INTO jugadores (nombre, precio, posicion, puntos) VALUES ('$nombre2', '$precio2', '$posicion2', '$puntos2')")
-                    val intent = Intent(this@AnadirJugador, menuBD::class.java)
+                    val intent = Intent(this@AnadirJugador, `menuBD`::class.java)
                     startActivity(intent)
                 }
 
             })
             builder.setNegativeButton("Cancelar") {
                     dialog, which ->
-                val intent = Intent(this@AnadirJugador, menuBD::class.java)
+                val intent = Intent(this@AnadirJugador, `menuBD`::class.java)
                 startActivity(intent)
             }
             builder.show()
