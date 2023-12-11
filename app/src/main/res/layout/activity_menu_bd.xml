@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.liceolapaz.des.prr.menuBD">
+    tools:context="com.liceolapaz.dam.practicafantasyprr.menuBD">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -23,7 +23,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Hay tantos jugadores" />
+        tools:text="Hay tantos jugadores">
+        </TextView>
 
 
     <androidx.recyclerview.widget.RecyclerView

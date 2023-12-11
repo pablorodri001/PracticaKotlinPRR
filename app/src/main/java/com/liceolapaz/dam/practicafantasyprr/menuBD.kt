@@ -33,7 +33,7 @@ class menuBD  : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
         R.id.anadirJugador -> {
-            val intent = Intent(this@`menuBD`, AnadirJugador::class.java)
+            val intent = Intent(this@menuBD, AnadirJugador::class.java)
             startActivity(intent)
             true
         }
@@ -79,7 +79,7 @@ class menuBD  : AppCompatActivity() {
 
     private fun seleccionarJugador(jugador : Jugador) {
 
-        val intent = Intent(this@`menuBD`, ModificarJugador::class.java)
+        val intent = Intent(this@menuBD, ModificarJugador::class.java)
         intent.putExtra("Codigo", jugador.codigo.toString())
         intent.putExtra("nombre", jugador.nombre)
         intent.putExtra("precio", jugador.precio.toString())

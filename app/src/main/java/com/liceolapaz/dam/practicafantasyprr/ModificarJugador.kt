@@ -90,7 +90,7 @@ class ModificarJugador : AppCompatActivity() {
 
 
         cancelarBtn.setOnClickListener() {
-            val intent = Intent(this@ModificarJugador, `2`::class.java)
+            val intent = Intent(this@ModificarJugador, menuBD::class.java)
             startActivity(intent)
 
             val adaptador =
@@ -123,14 +123,14 @@ class ModificarJugador : AppCompatActivity() {
                     jugadoresDB.execSQL("UPDATE jugadores SET precio = '$precio2' WHERE id = '$codigo2' ")
                     jugadoresDB.execSQL("UPDATE jugadores SET posicion = '$posicion2' WHERE id = '$codigo2' ")
                     jugadoresDB.execSQL("UPDATE jugadores SET puntos = '$puntos2' WHERE id = '$codigo2' ")
-                    val intent = Intent(this@ModificarJugador, `2`::class.java)
+                    val intent = Intent(this@ModificarJugador, menuBD::class.java)
                     startActivity(intent)
                 }
             })
 
             builder.setNegativeButton("Cancelar") {
                     dialog, which ->
-                val intent = Intent(this@ModificarJugador, `2`::class.java)
+                val intent = Intent(this@ModificarJugador, menuBD::class.java)
                 startActivity(intent)
             }
             builder.show()
@@ -145,7 +145,7 @@ class ModificarJugador : AppCompatActivity() {
             builder.setPositiveButton("Aceptar", object: DialogInterface.OnClickListener{
 
                 override fun onClick(dialogo: DialogInterface?, which: Int) {
-                    val intent = Intent(this@ModificarJugador, `2`::class.java)
+                    val intent = Intent(this@ModificarJugador, menuBD::class.java)
                     val codigo1 = codigo.text.toString()
                     jugadoresDB.execSQL("DELETE FROM jugadores WHERE id = '$codigo1'")
                     startActivity(intent)
@@ -154,7 +154,7 @@ class ModificarJugador : AppCompatActivity() {
 
             builder.setNegativeButton("Cancelar") {
                     dialog, which ->
-                val intent = Intent(this@ModificarJugador, `2`::class.java)
+                val intent = Intent(this@ModificarJugador, menuBD::class.java)
                 startActivity(intent)
             }
             builder.show()
