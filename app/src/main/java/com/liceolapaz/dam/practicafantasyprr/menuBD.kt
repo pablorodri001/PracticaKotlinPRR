@@ -32,11 +32,6 @@ class menuBD  : AppCompatActivity() {
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.menu_menu_bd,menu)
-        return true
-    }
-
     private fun irAAnadirJugador(view: View?) {
         val intent=Intent(this,AnadirJugador::class.java)
         startActivity(intent)
