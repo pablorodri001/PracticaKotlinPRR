@@ -3,10 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/anadirJugador"
-        android:title="AnadirJugador"
+        android:title="Añadir Jugador"
         android:icon="@drawable/ic_add"
         android:orderInCategory="100"
         app:showAsAction="always" />
-
 
 </menu>
