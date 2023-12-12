@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">practicaFantasyPrr</string>
-    <string name="title_activity_main2">Leanback MainActivity2</string>
+    <string name="app_name">Ej1prr</string>
+    <string name="title_activity_main">Leanback MainActivity</string>
     <string name="browse_title">Videos by Your Company</string>
     <string name="related_movies">Related Videos</string>
     <string name="grid_view">Grid View</string>
@@ -17,6 +17,6 @@
     <!-- Error messages -->
     <string name="error_fragment_message">An error occurred</string>
     <string name="dismiss_error">Dismiss</string>
-    <string name="title_activity_menu_bd2">menuBD2</string>
-    <string name="title_activity_anadir_jugador2">AnadirJugador2</string>
+    <string name="title_activity_menu_bd2">menuBD</string>
+    <string name="title_activity_anadir_jugador2">AnadirJugador</string>
 </resources>

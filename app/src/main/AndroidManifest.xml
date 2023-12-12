@@ -26,12 +26,12 @@
             android:name=".AnadirJugador"
             android:exported="false"
             android:label="@string/title_activity_anadir_jugador2"
-            android:theme="@style/Theme.PracticaFantasyPrr" />
+             />
         <activity
             android:name=".menuBD"
             android:exported="false"
             android:label="@string/title_activity_menu_bd2"
-            android:theme="@style/Theme.PracticaFantasyPrr" />
+            />
         <activity
             android:name=".ModificarJugador"
             android:exported="false" >

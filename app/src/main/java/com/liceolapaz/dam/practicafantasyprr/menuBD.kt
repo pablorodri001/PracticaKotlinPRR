@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -24,11 +26,21 @@ class menuBD  : AppCompatActivity() {
         val textView: TextView = findViewById(R.id.contador)
         initRecyclerView()
         textView.text = "El numero de jugadores totales es de " + JugadorListDB.size
+        val botonAñadir: Button =findViewById(R.id.AnadirJugador)
+        botonAñadir.setOnClickListener{
+            irAAnadirJugador(it)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.menu_menu_bd, menu)
+        menuInflater.inflate(R.menu.menu_menu_bd,menu)
         return true
+    }
+
+    private fun irAAnadirJugador(view: View?) {
+        val intent=Intent(this,AnadirJugador::class.java)
+        startActivity(intent)
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {

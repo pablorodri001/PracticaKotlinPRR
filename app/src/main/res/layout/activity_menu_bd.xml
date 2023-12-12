@@ -10,7 +10,19 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/AnadirJugador"
+            android:textColor="@color/white"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/black"
+            android:text="+"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="243dp"
+            tools:layout_editor_absoluteY="2dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <TextView
@@ -18,13 +30,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="textEnd"
-        android:background="@color/loginbackground"
         app:layout_constraintBottom_toTopOf="@id/recyclerJugador"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Hay tantos jugadores">
-        </TextView>
+        tools:text="Hay tantos jugadores"/>
 
 
     <androidx.recyclerview.widget.RecyclerView
