@@ -1,4 +1,4 @@
-package com.liceolapaz.dam.practicafantasyprr.ui.theme
+package com.liceolapaz.dam.Ejercicio1prr.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

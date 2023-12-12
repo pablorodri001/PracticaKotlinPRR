@@ -1,9 +1,8 @@
-package com.liceolapaz.dam.practicafantasyprr
+package com.liceolapaz.dam.Ejercicio1prr
 
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.liceolapaz.dam.practicafantasyprr.Jugador
 import com.liceolapaz.dam.practicafantasyprr.R
 
 class JugadorViewHolder(view: View) : RecyclerView.ViewHolder(view){

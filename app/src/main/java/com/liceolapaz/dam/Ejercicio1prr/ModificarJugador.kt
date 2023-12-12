@@ -1,4 +1,4 @@
-package com.liceolapaz.dam.practicafantasyprr
+package com.liceolapaz.dam.Ejercicio1prr
 
 import android.annotation.SuppressLint
 import android.content.DialogInterface
@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.Spinner
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.liceolapaz.dam.practicafantasyprr.R
 
 
 class ModificarJugador : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.liceolapaz.dam.practicafantasyprr
+package com.liceolapaz.dam.Ejercicio1prr
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

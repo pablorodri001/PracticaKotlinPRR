@@ -1,8 +1,9 @@
-package com.liceolapaz.dam.practicafantasyprr
+package com.liceolapaz.dam.Ejercicio1prr
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.liceolapaz.dam.practicafantasyprr.R
 
 class JugadorAdapter(private val jugadorList: List<Jugador>,
                      private val onClickListener: (Jugador) -> Unit
